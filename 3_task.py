@@ -9,13 +9,17 @@ def searching_brackets(string: str) -> str:
         else:
             return string
 
-
 # Точка входа в программу
 if __name__ == '__main__':
-  print('Введите текст:')
-  string = input()
+    while True:
+        print('Введите текст:')
+        string = input()
 
-  result = searching_brackets(string)
+        result = searching_brackets(string)
 
-  print(f"Результат: {result}")
+        print(f"Результат: {result}")
+
+        print("Для продолжения нажмите Ввод или n - для выхода из программы")
+        if input() == "n":
+            break
     
